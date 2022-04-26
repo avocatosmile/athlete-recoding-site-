@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>IST4035 Students</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/style.css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+    </head>
+    <body onload="fetchStudents()"  onload="average()">
+   
+        <div class="form">
+            <form>
+                <label> Time in sec:  </label> <input id="TIME" type="text" />
+                <label>Date: </label> <input id="DATE" type="date" />
+                
+               <label>Type: </label> <select name = "dropdown" id ="TYPE">
+                     <option id ="100m" >100m</option>
+                    <option id ="200m">200m</option>
+                
+                 <input type= "submit" value ="Add"/>
+               
+               
+            </form>
+
+         </div>     
+
+
+            
+            <label>100m</label>
+            <table id="content">
+                
+            </table>
+
+
+            <label>200m</label>
+            <table id="content2">
+                
+            </table>
+        
+<h1 id = "av"></h1>
+<h1 id = "a"></h1>
+
+
+
+
+ <div class="container">
+     <center><h1 > 100M </h1></center>
+  <center> <canvas id="myChart" style="width:100%;max-width:600px"></canvas></center>
+
+  </div>
+
+
+ <div class="container">
+      <center><h1 > 200M </h1></center>
+      <center> <canvas id="myChart2" style="width:100%;max-width:600px"></canvas></center>
+
+
+  </div>
+
+
+
+
+
+    </body>
+    <script src="js/main.js"></script>
+
+</html>
